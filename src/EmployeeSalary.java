@@ -1,7 +1,33 @@
 public class EmployeeSalary {
-    String name;
-    int id;
-    int salary;
+    private String name;
+    private int id;
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int salary;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
     // Constructor to initialize employee details
     public EmployeeSalary(String name, int id, int salary) {

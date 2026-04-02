@@ -44,8 +44,8 @@ public class EmployeeSalary {
         System.out.println("------------------------");
     }
 
-    public void incrementSalary(double percentage){
-        salary *=(1+percentage/100);
+    public void incrementSalary(double percentage) {
+        salary *= (1 + percentage / 100);
         System.out.println("Name: " + name);
         System.out.println("ID: " + id);
         System.out.println("Salary: " + salary);
@@ -74,6 +74,14 @@ public class EmployeeSalary {
 
 
     }
-    }
+}
+
+
+
+
+
+
+
+
 
 

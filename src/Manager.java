@@ -9,10 +9,18 @@ public class Manager extends EmployeeSalary {
         System.out.println(department);
     }
 
+    //method overriding
+    public void displayDetails() {
+        System.out.println("Name: " + getName());
+        System.out.println("ID: " + getId());
+        System.out.println("Salary: " + getSalary());
+        System.out.println("------------------------");
+    }
+
     public static void main(String[] args) {
-        Manager mgr1 = new Manager("Diya", 30, 120000,"IT Analysit");
-        Manager mgr2= new Manager("Divakar", 2508, 110000,"Finance");
-        Manager mgr3 = new Manager("Sphoorthy", 2039, 115000,"Marketing");
+        Manager mgr1 = new Manager("Spoo", 30, 120000,"IT Analysit");
+        Manager mgr2= new Manager("Div", 2508, 110000,"Finance");
+        Manager mgr3 = new Manager("DD", 2039, 115000,"Marketing");
 
         EmployeeSalary emp1 = new EmployeeSalary("Sphoorthy", 25037,120000);
         EmployeeSalary emp2 = new EmployeeSalary("Alice", 25038, 110000);

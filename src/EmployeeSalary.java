@@ -44,6 +44,15 @@ public class EmployeeSalary {
         System.out.println("------------------------");
     }
 
+    //method overloading
+    public void diplayDetails(boolean detailed){
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        if(detailed){
+            System.out.println("Salary: " + salary);
+        }
+    }
+
     public void incrementSalary(double percentage) {
         salary *= (1 + percentage / 100);
         System.out.println("Name: " + name);
@@ -62,10 +71,14 @@ public class EmployeeSalary {
         EmployeeSalary emp3 = new EmployeeSalary("Bob", 25039, 115000);
 
         // Display details of all employees
+        System.out.println("Basic details");
         System.out.println("Before Increment");
         emp1.displayDetails();
         emp2.displayDetails();
         emp3.displayDetails();
+
+        System.out.println("Boolean detailed");
+        emp1.diplayDetails(true);
 
         System.out.println("After Increment");
         emp1.incrementSalary(5);

@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
 public class EmployeeSalary {
     private String name;
     private int id;
@@ -69,6 +73,27 @@ public class EmployeeSalary {
         EmployeeSalary emp1 = new EmployeeSalary("Sphoorthy", 25037, 120000);
         EmployeeSalary emp2 = new EmployeeSalary("Alice", 25038, 110000);
         EmployeeSalary emp3 = new EmployeeSalary("Bob", 25039, 115000);
+
+        ArrayList<EmployeeSalary> employeeNames=new ArrayList<>();
+        employeeNames.add(emp1);
+        employeeNames.add(emp2);
+        employeeNames.add(emp3);
+
+        HashMap<Integer,EmployeeSalary> employeeId=new HashMap<>();
+        employeeId.put(emp1.getId(), emp1);
+        employeeId.put(emp2.getId(), emp2);
+        employeeId.put(emp3.getId(), emp3);
+
+        Iterator<EmployeeSalary> itr = employeeNames.iterator();
+        while (itr.hasNext()){
+            EmployeeSalary emp=itr.next();
+            emp.displayDetails();
+
+            }
+
+        
+
+
 
         // Display details of all employees
         System.out.println("Basic details");
